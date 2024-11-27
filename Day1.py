@@ -6,7 +6,10 @@ def find_floor(stroka):
             sum += 1
         if symbol == (')'):
             sum -= 1
-    return sum
+    if sum == 0:
+        return 0
+    else:
+        return sum + 1
 def main():
     print(find_floor(input()))
 if __name__ == '__main__':
